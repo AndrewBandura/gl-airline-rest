@@ -15,7 +15,7 @@ public class IndexController {
     }
     @RequestMapping(method = RequestMethod.GET)
     String getIndexPage1(){
-        return "index.html";
+        return "index";
 
     }
 
