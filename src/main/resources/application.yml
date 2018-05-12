@@ -1,0 +1,72 @@
+# Spring Boot configuration
+spring:
+  profiles: test
+    # Database
+  server:
+    port: 8080
+    sessionTimeout: 30
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:app_db;DB_CLOSE_ON_EXIT=FALSE
+    username: sa
+    password: sa
+    # JPA properties
+  jpa:
+    hibernate:
+      ddl-auto: create
+      show-sql: true
+  h2:
+    console:
+    enabled: true
+
+  logging:
+    pattern:
+      console: "%d %-5level %logger : %msg%n"
+    level:
+      org.springframework: INFO
+      org.hibernate: DEBUG
+
+#
+spring:
+  profiles: dev
+
+  server:
+    port: 8080
+    sessionTimeout: 30
+
+  datasource:
+  #    database: d3q689uoptkvem
+    platform: postgres
+  #    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+    generate-ddl: false
+
+    url: jdbc:postgresql://ec2-54-225-200-15.compute-1.amazonaws.com:5432/d3q689uoptkvem?sslmode=require
+    username: fptcatnuqfdnhg
+    password: 9ee4ec3bd94c39e751a0ac39c84a9a3cdb3085c3b43ac69de10b1be5c3493245
+    driverClassName: org.postgresql.Driver
+    defaultSchema:
+    maxPoolSize: 20
+
+      #JPA properties
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+#      hbm2ddl.method: update
+      show_sql: true
+      format_sql: true
+#      dialect: org.hibernate.dialect.PostgreSQL9Dialect
+  logging:
+    pattern:
+      console: "%d %-5level %logger : %msg%n"
+    level:
+      org.springframework: INFO
+      org.hibernate: DEBUG
+
+  # Security configuration
+  #security:
+  #  user:
+  #    name: user
+  #    password: user
