@@ -50,7 +50,7 @@ public class AirlineCompanyController {
         static final String GET_COMPANY_BY_ID_PATH = "/api/company/{id}";
         static final String CREATE_COMPANY_PATH = "/api/company";
         static final String UPDATE_COMPANY_PATH = "/api/company/{id}";
-        static final String DELETE_COMPANY_PATH = "//api/company/{id}";
+        static final String DELETE_COMPANY_PATH = "/api/company/{id}";
     }
 
 
