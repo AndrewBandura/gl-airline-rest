@@ -8,14 +8,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 @CrossOrigin("*")
 public class IndexController {
-    @RequestMapping(value ="/api", method = RequestMethod.GET)
+    @RequestMapping(value ={"/", "/api"}, method = RequestMethod.GET)
     String getIndexPage(){
         return "index.html";
-
-    }
-    @RequestMapping(method = RequestMethod.GET)
-    String getIndexPage1(){
-        return "index";
 
     }
 
