@@ -3,13 +3,8 @@ package com.andy.airline.service;
 import com.andy.airline.domain.Aircraft;
 import com.andy.airline.domain.AirlineCompany;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
-
-/**
- * @author Andrew Bandura
- */
 
 public interface AirlineCompanyService{
 

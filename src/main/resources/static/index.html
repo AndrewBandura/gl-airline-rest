@@ -1,45 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:display="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>Airline company!</title>
+    <title>Airline company</title>
 </head>
-<body>
+
+<style type="text/css">
+    .block1 {
+        width: 800px;
+    }
+
+</style>
+
 <h1>Airline company REST API</h1>
 
-<table border="0">
+<div class="block1">You can process CRUD operations with airline company.
+          Aircraft cannot exist without parent airline.
+          So you can operate aircraft only through parent airline.
+</div>
+
+<table border="1">
 
     <tr>
         <th>Type</th>
         <th>URL</th>
         <th>Info</th>
+        <th>Input JSON</th>
+        <th>Output JSON</th>
     </tr>
-    <tr>
+    <tr valign="top">
         <td>GET</td>
         <td>/api/company</td>
-        <td>get all companies</td>
+        <td>get all companies with all nested aircraft</td>
+        <td></td>
+        <td><img src = img/get_all_companies.png width="200" height="300" border="0"></td>
     </tr>
-    <tr>
+    <tr valign="top">
         <td>GET</td>
         <td>/api/company/{id}</td>
-        <td>get company by ID</td>
+        <td>get company by ID with nested aircraft</td>
+        <td></td>
+        <td><img src = img/get_all_companies.png width="200" height="300" border="0"></td>
     </tr>
-    <tr>
+    <tr valign="top">
         <td>POST</td>
         <td>/api/company</td>
-        <td>create company</td>
+        <td>create company with nested aircraft</td>
+        <td><img src = img/company.png width="200" height="300" border="0"></td>
+        <td></td>
     </tr>
 
-    <tr>
+    <tr valign="top">
         <td>PUT</td>
         <td>/api/company/{id}</td>
-        <td>update company</td>
+        <td width="300">update company with nested aircraft. Also is used to create new aircraft</td>
+        <td><img src = img/company.png width="200" height="300" border="0"></td>
+        <td></td>
     </tr>
 
-    <tr>
+    <tr valign="top">
         <td>DELETE</td>
         <td>/api/company/{id}</td>
         <td>delete company</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr valign="top">
+        <td>GET</td>
+        <td>/api/company/{id}/capacity</td>
+        <td width="300">calculate total capacity of all aircraft in the airline</td>
+        <td></td>
+        <td><img src = img/answer_dto.png width="100" height="80" border="0"></td>
+    </tr>
+
+    <tr valign="top">
+        <td>GET</td>
+        <td>/api/company/{id}/carrying-capacity</td>
+        <td width="300">calculate total carrying capacity of all aircraft in the airline</td>
+        <td></td>
+        <td><img src = img/answer_dto.png width="100" height="80" border="0"></td>
+    </tr>
+
+    <tr valign="top">
+        <td>GET</td>
+        <td>/api/company/{id}/aircraft/sort</td>
+        <td width="300">get aircraft of the airline sorted by flight range</td>
+        <td></td>
+        <td><img src = img/aircraft_sorted.png width="200" height="300" border="0"></td>
+    </tr>
+
+    <tr valign="top">
+        <td>GET</td>
+        <td>/api/company/{id}/aircraft/consumption/{from}/{to}</td>
+        <td width="300">get aircraft of the airline filtered by fuel consumption</td>
+        <td></td>
+        <td><img src = img/aircraft_sorted.png width="200" height="300" border="0"></td>
     </tr>
 
 </table>

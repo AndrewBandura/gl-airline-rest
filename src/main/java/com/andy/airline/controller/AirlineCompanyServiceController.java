@@ -73,7 +73,7 @@ public class AirlineCompanyServiceController {
     public static class Links {
         static final String GET_CAPACITY_PATH = "/api/company/{id}/capacity";
         static final String GET_CARRYING_CAPACITY_PATH = "/api/company/{id}/carrying-capacity";
-        static final String CREATE_SORTED_PATH = "/api/company/{id}/aircraft/sort/";
+        static final String CREATE_SORTED_PATH = "/api/company/{id}/aircraft/sort";
         static final String GET_BY_FUEL_CONSUMPTION_PATH = "/api/company/{id}/aircraft/consumption/{from}/{to}";
     }
 

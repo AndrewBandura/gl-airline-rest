@@ -8,7 +8,6 @@ import com.andy.airline.repository.AircraftRepository;
 import com.andy.airline.repository.AirlineCompanyRepository;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
