@@ -18,7 +18,8 @@ Application is deployed on Heroku cloud, where Postgres DB is used.
 https://gl-airline.herokuapp.com/
 
 
-If you build and run project locally on your own, apllication is available at the following URL:
+If you build and run project locally on your own (using IDE or command "$mvn spring-boot:run"), 
+apllication is available at the following URL:
 
 http://localhost:8080
 
