@@ -13,11 +13,13 @@ Sprihg boot, JPA (Hibernate), H2 (test profile), Postgres(prod profile).
 Entities with inheritance are mapped into Hibernate using strategy "One table per hierarchy with discriminator column".
 No security.
 
-#Application is deployed on Heroku cloud, where Postgres DB is used.
+Application is deployed on Heroku cloud, where Postgres DB is used.
+
 https://gl-airline.herokuapp.com/
 
 
 If you build and run project locally on your own, apllication is available at the following URL:
+
 http://localhost:8080
 
 
