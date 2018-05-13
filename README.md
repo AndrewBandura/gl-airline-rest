@@ -1,6 +1,6 @@
 ## Synopsis
 
-REST service for managing airline company. Simple version with data storage in JSON file and limited number of commands.  
+REST service for managing airline company.
 
 #### Available API:
 
