@@ -2,7 +2,7 @@
 
 REST service for managing airline company.
 
-#### Available API #####(it may take some time to open this link for the first time)
+#### Available API (it may take some time to open this link for the first time)
 
 https://gl-airline.herokuapp.com/api
 
