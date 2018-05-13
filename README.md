@@ -7,7 +7,7 @@ REST service for managing airline company.
 https://gl-airline.herokuapp.com/api 
 
 
-## Stack of technologies
+#### Stack of technologies
 
 Sprihg boot, JPA (Hibernate), H2 (test profile), Postgres(prod profile).
 Entities with inheritance are mapped into Hibernate using strategy "One table per hierarchy with discriminator column".
@@ -23,7 +23,7 @@ If you build and run project locally on your own, apllication is available at th
 http://localhost:8080
 
 
-## Task
+#### Task
 
 Create REST service “Airline” with CRUD operations and following services:
 
