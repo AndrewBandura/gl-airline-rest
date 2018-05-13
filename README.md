@@ -11,7 +11,6 @@ https://gl-airline.herokuapp.com/api  (it may take some time to open this link f
 
 Sprihg boot, JPA (Hibernate), H2 (test profile), Postgres(prod profile).
 Entities with inheritance are mapped into Hibernate using strategy "One table per hierarchy with discriminator column".
-No security.
 
 Application is deployed on Heroku cloud, where Postgres DB is used.
 
