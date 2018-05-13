@@ -14,7 +14,7 @@ Entities with inheritance are mapped into Hibernate using strategy "One table pe
 No security.
 
 #Application is deployed on Heroku cloud, where Postgres DB is used.
-#https://gl-airline.herokuapp.com/
+https://gl-airline.herokuapp.com/
 
 
 If you build and run project locally on your own, apllication is available at the following URL:
